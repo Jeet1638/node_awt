@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJS for beginners</title>
+    <script src="angular.min.js">
+    </script>
+</head>
+
+<body>
+    <h4>Add Two Numbers Using Double Click Event</h4>
+    <div ng-app="" ng-init="firstNumber=26;SecondNumber=89">
+        <p>First Number:&nbsp;&nbsp;&nbsp; <input type="number" ng-model="firstNumber"></p>
+        <p>Second Number: <input type="number" ng-model="SecondNumber"></p> 
+        <button ng-dblclick="Result=firstNumber+ SecondNumber">Double Click</button>
+        <p>Result:
+        <p style="font-weight:bold;color:blue" ng-bind="Result"> </p>
+    </div>
+</body>
+
+</html>
